@@ -18,56 +18,7 @@ export default function Home() {
   const [row, setRow] = React.useState(["One", "Two", "Three"]);
 
   const [items, setItems] = React.useState(["A", "B", "C"]);
-
-  // const onSortEnd = (oldIndex, newIndex) => {
-  //   console.log((array) => arrayMove(array, oldIndex, newIndex));
-  //   setItems((array) => arrayMove(array, oldIndex, newIndex));
-  // };
-
-  // return (
-  //   <div
-  //     style={{
-  //       backgroundColor: "skyblue",
-  //       padding: "5px",
-  //       borderRadius: "10px",
-  //       margin: "10px 10px",
-  //       zIndex: 1,
-  //     }}
-  //   >
-  //     <SortableList
-  //       onSortEnd={onSortEnd}
-  //       className="list"
-  //       draggedItemClassName="dragged"
-  //       style={{
-  //         display: "flex",
-  //         flexDirection: "row",
-  //         justifyContent: "space-evenly",
-  //       }}
-  //     >
-  //       {items.map((item) => (
-  //         <SortableItem
-  //           key={item}
-  //           style={{
-  //             zIndex: 99,
-  //           }}
-  //         >
-  //           <Card
-  //             title={`Card title ${item}`}
-  //             bordered={false}
-  //             style={{
-  //               width: 300,
-  //             }}
-  //           >
-  //             <p>Card content</p>
-  //             <p>Card content</p>
-  //             <p>Card content</p>
-  //           </Card>
-  //         </SortableItem>
-  //       ))}
-  //     </SortableList>
-  //   </div>
-  // );
-
+  
   const rRow = ({ children, ...props }) => {
     const {
       attributes,

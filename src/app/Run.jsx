@@ -103,13 +103,11 @@ function Run() {
       // const aspectRatio =
       //   dimensions.width / devisor + ":" + dimensions.height / devisor;
 
-      console.log(dimensions.width, dimensions.height, "org width height");
 
       if (
         imgRatioObj.one.mobileWidth == dimensions.width ||
         imgRatioObj.one.mobileWidth == dimensions.width
       ) {
-        console.log("accept");
       }
       // console.log(devisor, "result of gcd");
       // console.log(aspectRatio, "aspectRatio");
@@ -118,6 +116,8 @@ function Run() {
 
     return isJpgOrPng && isLt2M;
   };
+
+  console.log(Date.now());
 
   return (
     <div>
